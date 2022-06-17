@@ -1,0 +1,231 @@
+/* Header */
+.header {
+    height: 100px;
+    border: 1px solid rgba(48, 50, 71, 0.1);
+}
+.headerArticle{ 
+    width: 206px;
+    height: 36px;
+    margin: 32px 1170px 32px 64px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+    color: #303247;
+}
+
+/* LoanList */
+.div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 676px;
+    
+    padding: 32px;
+    margin: 32px 700px 32px 64px;
+        border: 1px solid rgba(48, 50, 71, 0.1);
+        border-radius: 20px;
+}
+.listArticle { 
+    width: 400px;
+    
+    margin-bottom: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #303247;
+}
+.listText {
+    width: 222px;
+    height: 24px;
+ 
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #303247;
+}
+.listButton {
+ position: absolute;
+    padding: 16px 32px;
+    gap: 10px;
+    left: 547px;
+    bottom: 50px;
+ 
+    width: 137px;
+    height: 56px;
+    background: #F7E308;
+    border-radius: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #303247;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.8);;
+    z-index: 1200;
+}
+
+.modal {
+    position: relative;
+    background: white;
+    width: 627px;
+    height: 499px;
+    border-radius: 5px;
+   
+}
+.modalContent {
+position: absolute; 
+width: 499px;
+height: 371px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+        
+}
+.modalArticle {
+    
+        width: 234px;
+        height: 42px;
+        left: 65px;
+        top: 64px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 42px;
+    
+        color: #303247;
+}
+
+.modalTitle {
+    width: 227px;
+    height: 24px;
+    left: 64px;
+    top: 138px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #303247;
+}
+.modalAmount {
+    width: 250px;
+    height: 24px;
+    left: 64px;
+    top: 194px;
+    margin-bottom: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #303247;
+}
+.modalLoanEnd {
+    width: 285px;
+    height: 24px;
+    left: 64px;
+    top: 226px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #303247;
+}
+.modalInvestment {
+    width: 281px;
+    height: 36px;
+    left: 64px;
+    top: 314px;
+    margin-bottom: 29px;
+    margin-top: 64px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #303247;
+}
+.modalInput {
+display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+
+    position: absolute;
+    width: 328px;
+    height: 56px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(48, 50, 71, 0.1);
+    border-radius: 5px;
+
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #303247;
+}
+.modalButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    left: 350px;
+    gap: 10px;
+        position: absolute;
+        width: 137px;
+        height: 56px;
+        background: #F7E308;
+        border-radius: 5px;
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+    
+        color: #303247;
+}
