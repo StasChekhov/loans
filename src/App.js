@@ -5,12 +5,18 @@ import Modal from "./components/Modal";
 
 function App() {
  const [isOpen, setIsOpen] = useState(false);
-
+ const [modal, setModal] = useState([]);
+ console.log(modal);
  return (
   <div>
    <Header />
-   <LoanList open={() => setIsOpen(true)} />
-   {isOpen && <Modal onClose={() => setIsOpen(false)} />}
+   <LoanList
+    open={(loan) => {
+     setModal(loan);
+     setIsOpen(true);
+    }}
+   />
+   {isOpen && <Modal loan={modal} onClose={() => setIsOpen(false)} />}
   </div>
  );
 }

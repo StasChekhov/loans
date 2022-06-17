@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import x from "../x.svg";
 
 import s from "./components.module.css";
 
-export default function Modal({ onClose }) {
+export default function Modal({ onClose, loan }) {
  const [number, setNumber] = useState("");
 
  useEffect(() => {
@@ -29,20 +30,21 @@ export default function Modal({ onClose }) {
    <div className={s.modal}>
     <div className={s.modalContent}>
      <h1 className={s.modalArticle}>Invest in Loan</h1>
-     <h3 className={s.modalTitle}>Title</h3>
-     <p className={s.modalAmount}>Amount available: $12,362</p>
+     <h2 className={s.modalTitle}>{loan.title}</h2>
+     <p className={s.modalAmount}>Amount available: ${loan.available}</p>
      <p className={s.modalLoanEnd}>Loan ends in: 1 month 10 days</p>
-     <h2 className={s.modalInvestment}>Investment amount</h2>
+     <h3 className={s.modalInvestment}>Investment amount</h3>
      <input
       type="text"
       value={number}
       onChange={(e) => setNumber(e.target.value)}
-      name="name"
+      name="number"
       className={s.modalInput}
      />
      <button type="button" className={s.modalButton}>
       Invest
      </button>
+     <img src={x} alt="" className={s.svg} onClick={overlayClick} />
     </div>
    </div>
   </div>
