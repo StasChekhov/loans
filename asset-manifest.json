@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/loans/static/css/main.33af5ac1.css",
+    "main.js": "/loans/static/js/main.5cb6b044.js",
+    "index.html": "/loans/index.html",
+    "static/media/x.svg": "/loans/static/media/x.1239197ee4a75d96c27b5c0da1c7ea10.svg",
+    "main.33af5ac1.css.map": "/loans/static/css/main.33af5ac1.css.map",
+    "main.5cb6b044.js.map": "/loans/static/js/main.5cb6b044.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33af5ac1.css",
+    "static/js/main.5cb6b044.js"
+  ]
+}
