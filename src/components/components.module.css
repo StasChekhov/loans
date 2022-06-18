@@ -215,6 +215,7 @@ display: flex;
         width: 137px;
         height: 56px;
         background: #F7E308;
+        border: 0;
         border-radius: 5px;
     font-family: 'Inter';
         font-style: normal;
