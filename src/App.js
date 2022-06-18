@@ -19,6 +19,7 @@ function App() {
  }));
  const [isOpen, setIsOpen] = useState(false);
  const [modal, setModal] = useState({});
+ console.log(modal);
 
  const handleModalOpen = (loan) => {
   setModal(loan);

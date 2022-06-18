@@ -17,42 +17,47 @@
 
 /* LoanList */
 .div {
+    width: 676px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    width: 676px;
-    
-    padding: 32px;
-    margin: 32px 700px 32px 64px;
+        padding: 32px;
+        margin: 32px 700px 32px 64px;
         border: 1px solid rgba(48, 50, 71, 0.1);
         border-radius: 20px;
 }
 .listArticle { 
     width: 400px;
-    
     margin-bottom: 16px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 30px;
-
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
     color: #303247;
 }
 .listText {
     width: 222px;
     height: 24px;
- 
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
     color: #303247;
+}
+
+.listInvested {
+    color: #51A571;
+    position: absolute;
+    left: 650px;
+    top: 20px;
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
 }
 .listButton {
  position: absolute;
@@ -115,20 +120,17 @@ height: 371px;
     transform: translate(-50%, -50%);
         
 }
-.modalArticle {
+.modalArticle {  
+    /* width: 234px; */       
+    left: 65px;
+    top: 64px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
     
-        /* width: 234px; */
-        
-        left: 65px;
-        top: 64px;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 42px;
-    
-        color: #303247;
+    color: #303247;
 }
 
 .modalTitle {
@@ -151,13 +153,11 @@ height: 371px;
     left: 64px;
     top: 194px;
     margin-bottom: 8px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
     color: #303247;
 }
 .modalLoanEnd {
@@ -165,13 +165,11 @@ height: 371px;
     height: 24px;
     left: 64px;
     top: 226px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
     color: #303247;
 }
 .modalInvestment {
@@ -181,13 +179,11 @@ height: 371px;
     top: 314px;
     margin-bottom: 29px;
     margin-top: 50px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
     color: #303247;
 }
 .modalInput {
@@ -196,15 +192,12 @@ display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 16px 32px 16px 32px;
-
     position: absolute;
-    
 
     background: #FFFFFF;
     border: 1px solid rgba(48, 50, 71, 0.1);
     border-radius: 5px;
-
-    font-family: 'Inter';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 23px;
@@ -228,9 +221,8 @@ display: flex;
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
-        text-transform: uppercase;
-    
-        color: #303247;
+        text-transform: uppercase; 
+    color: #303247;
 }
 .svg {
     position: absolute;
