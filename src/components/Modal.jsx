@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import x from "../x.svg";
+import { getAvailableString } from "../utilitites";
 
 import s from "./components.module.css";
 
-export default function Modal({ onClose, loan }) {
+export default function Modal({ onClose, loan, setLoan, changeTotal }) {
  const [number, setNumber] = useState("");
-
  useEffect(() => {
   const escapeFunction = (e) => {
    if (e.code === "Escape") {
@@ -25,6 +24,21 @@ export default function Modal({ onClose, loan }) {
   }
  };
 
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  // check if available bigger then number
+  //if yes =>
+  setLoan((prevLoan) => {
+   return {
+    ...prevLoan,
+    available: getAvailableString(prevLoan.available, number),
+   };
+  });
+  changeTotal(Number(number));
+
+  setNumber("");
+ };
+
  return (
   <div className={s.overlay} onClick={overlayClick}>
    <div className={s.modal}>
@@ -34,17 +48,19 @@ export default function Modal({ onClose, loan }) {
      <p className={s.modalAmount}>Amount available: ${loan.available}</p>
      <p className={s.modalLoanEnd}>Loan ends in: 1 month 10 days</p>
      <h3 className={s.modalInvestment}>Investment amount</h3>
-     <input
-      type="text"
-      value={number}
-      onChange={(e) => setNumber(e.target.value)}
-      name="number"
-      className={s.modalInput}
-     />
-     <button type="button" className={s.modalButton}>
-      Invest
-     </button>
-     <img src={x} alt="" className={s.svg} onClick={overlayClick} />
+     <form onSubmit={handleSubmit}>
+      <input
+       type="text"
+       value={number}
+       onChange={(e) => setNumber(e.target.value)}
+       name="number"
+       className={s.modalInput}
+      />
+      <button type="submit" className={s.modalButton}>
+       Invest
+      </button>
+      <img src={x} alt="" className={s.svg} onClick={overlayClick} />
+     </form>
     </div>
    </div>
   </div>
